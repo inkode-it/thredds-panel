@@ -1,0 +1,25 @@
+<div id="mapid_{{ctrl.panel.id}}" class="mapcontainer {{ctrl.saturationClass}}" ng-style="{height: ctrl.height}"></div>
+
+<div class='map-overlay top'>
+    <div class='map-overlay-inner'>
+        <div class="steps">
+            <label id="map_{{ctrl.panel.id}}_date"></label>
+            <input id='map_{{ctrl.panel.id}}_slider' class="mapslider" type='range' value="0" min="0"/>
+        </div>
+        <button type="button" id="start_{{ctrl.panel.id}}">&#9654;</button>
+	    <button type="button" id="stop_{{ctrl.panel.id}}">&#9724;</button>
+    </div>
+</div>
+<div class='map-overlay map-scale bottom-right'>
+    <div class='map-overlay-inner nopadding'>
+        <div class="scaleText">{{ctrl.panel.thredds.scale_max}}</div>
+    <div class='scaleImageContainer'>
+        <img class="scaleImage" src="{{ctrl.panel.thredds.url}}?REQUEST=GetLegendGraphic&COLORBARONLY=true&WIDTH=1&HEIGHT=398&PALETTE=sst_36&NUMCOLORBANDS=80"/>
+    </div>
+        <div class="scaleText">{{ctrl.panel.thredds.scale_min}}</div>
+    </div>
+</div>
+
+<div id="graphcontainer_{{ctrl.panel.id}}" class="graphcontainer" style="display: none; position: absolute; right: 5px; top: 10px; left: 5px; bottom: 0px" onclick="this.style.display = 'none'">
+    <div id="graph_{{ctrl.panel.id}}" class="graph"/>
+</div>

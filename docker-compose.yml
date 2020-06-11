@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  # grafana used for graphing postgis data
+  grafana:
+    container_name: thredds.grafana
+    image: grafana/grafana
+    user: ${UID}
+    restart: always
+    ports:
+    - '3001:3000'
+    volumes:
+    - ./dist:/var/lib/grafana/plugins/thredds

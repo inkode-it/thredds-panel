@@ -1,0 +1,43 @@
+{
+  "type": "panel",
+  "name": "Thredds",
+  "id": "thredds-panel",
+
+  "info": {
+    "description": "Panel to show THREDDS dataserver map and geo data info.",
+    "author": {
+      "name": "Giorgio @ INKODE SOC COOP <giorgio@inkode.it>",
+      "url": "https://inkode.it"
+    },
+    "keywords": [
+      "map",
+      "grafana",
+      "geo",
+      "GIS",
+      "netcdf",
+      "plugin",
+      "thredds",
+      "panel"
+    ],
+    "logos": {
+      "small": "images/thredds-icon.png",
+      "large": "images/thredds-icon.png"
+    },
+    "links": [
+      {"name": "Project site", "url": "https://github.com/inkode-it/thredds-panel"},
+      {"name": "MIT License", "url": "https://github.com/inkode-it/thredds-panel/blob/master/license.txt"}
+    ],
+    "screenshots": [
+      {"name": "Map", "path": "images/MAP.png"},
+      {"name": "Timeserie", "path": "images/TIMESERIE.png"},
+      {"name": "Options", "path": "images/OPTIONS.png"}
+    ],
+    "version": "0.2.1",
+    "updated": "2020-06-11"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": [ ]
+  }
+}
