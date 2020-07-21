@@ -53,7 +53,7 @@
   "dependencies": {
     "es6-module-loader": "^0.17.11",
     "grafana-sdk-test": "^1.0.0",
-    "lodash": "~4.16.2",
+    "lodash": "~4.17.19",
     "moment": "^2.18.1"
   }
 }
