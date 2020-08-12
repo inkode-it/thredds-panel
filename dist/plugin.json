@@ -4,7 +4,7 @@
   "id": "thredds-panel",
 
   "info": {
-    "description": "Grafana plugin to show thredds dataserver geo data.",
+    "description": "Panel to show THREDDS dataserver map and geo data info.",
     "author": {
       "name": "Giorgio @ INKODE SOC COOP <giorgio@inkode.it>",
       "url": "https://inkode.it"
@@ -37,7 +37,8 @@
   },
 
   "dependencies": {
-    "grafanaVersion": "3.x.x",
+    "grafanaVersion": "6.5.x",
+    "grafanaDependency": ">=6.5.0",
     "plugins": [ ]
   }
 }
